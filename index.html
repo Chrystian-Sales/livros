@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+    <link href="css/estilo.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <nav class="topnav">
+        <a><img src="images/Livros.png" width="128px" href="http://127.0.0.1:5501/index.html" target="_blank"></a>
+        <div class="topnav-right">
+            <a class="ativo" href="#busca">Início</a>
+            <a href="#sobre">Contato</a>
+            <a href="#sobre">Sobre</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="coluna">
+            <h1 class="titulo">Formulário</h1>
+            <h1>Cadastro de Livros.</h1>
+            <p>Utilize o formulário para cadastrar os livros.</p>
+
+            <form action="form" method="post" action="/">
+
+                <label>Titulo do Livro.</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Digite o titulo do livro"
+                    title="Informe o nome completo do Autor" required><br><br>
+
+                <label>É capa dura?</label>
+                <input type="checkbox" id="Capa_dura" name="Capa_dura">Sim<br><br>
+
+                <label>Data de Lançamento.</label>
+                <input type="date" id="data" name="data"><br><br>
+
+                <label>Tipo de livros.</label>
+                <input type="radio" id="tipo_livro" name="tipo_livro" value="comum" required>Comum
+
+                <input type="radio" id="tipo_livro" name="tipo_livro" value="mangá" required>Mangá
+
+                <input type="radio" id="tipo_livro" name="tipo_livro" value="quadrinhos" required>Quadrinhos
+
+                <input type="radio" id="tipo_livro" name="tipo_livro" value="colorir" required>Colorir
+
+                <input type="radio" id="tipo_livro" name="tipo_livro" value="ilustrado" required>Ilustrado<br><br>
+
+                <label>Já disponivel para venda ao cliente?</label>
+                <input type="checkbox" id="Vendas" name="Vendas">Sim<br><br>
+
+                <label>Quantidade de Copias.</label>
+                <input type="number" id="Quantidade_Copias" min="0" max="5" placeholder="0" size="30"><br><br>
+
+                <input type="submit" value="Salvar ✅" class="botão_apagar">
+                <input type="reset" value="Limpar ♻️" class="botão">
+            </form>
+        </div>
+
+        <div class="coluna cinza">
+            <h1 class="titulo">Relação de livros cadastrados</h1>
+            <table border="1">
+
+                <head>
+                    <tr>
+                        <th colspan="1">#</th>
+                        <th colspan="1">Titulo</th>
+                        <th colspan="1">Capa Dura</th>
+                        <th colspan="1">Lançamento</th>
+                        <th colspan="1">Tipo</th>
+                        <th colspan="1">Disponivel P/ Venda?</th>
+                        <th colspan="1">Quantidade</th>
+                        <th colspan="1">Opções</th>
+                    </tr>
+                </head>
+                <tr>
+                    <td>1</td>
+                    <td>Guerra do amanhã</td>
+                    <td>Sim</td>
+                    <td>04/08/2002</td>
+                    <td>Comum</td>
+                    <td>Sim</td>
+                    <td>18</td>
+                    <td>
+                        <input type="submit" value="Editar  ✍🏻" class="botão">
+                        <input type="reset" value="Apagar ❌" class="botão_apagar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Naruto</td>
+                    <td>Não</td>
+                    <td>28/04/2000</td>
+                    <td>Mangá</td>
+                    <td>Não</td>
+                    <td>0</td>
+                    <td>
+                        <input type="submit" value="Editar ✍🏻" class="botão">
+                        <input type="reset" value="Apagar ❌" class="botão_apagar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Arte da Guerra</td>
+                    <td>Sim</td>
+                    <td>08/02/1983</td>
+                    <td>Comum</td>
+                    <td>Sim</td>
+                    <td>14</td>
+                    <td>
+                        <input type="submit" value="Editar ✍🏻" class="botão">
+                        <input type="reset" value="Apagar ❌" class="botão_apagar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Frozen</td>
+                    <td>Sim</td>
+                    <td>18/09/2008</td>
+                    <td>Colorir</td>
+                    <td>Sim</td>
+                    <td>23</td>
+                    <td>
+                        <input type="submit" value="Editar ✍🏻" class="botão">
+                        <input type="reset" value="Apagar ❌" class="botão_apagar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Turma da Monica</td>
+                    <td>Sim</td>
+                    <td>23/03/1999</td>
+                    <td>Quadrinhos</td>
+                    <td>Sim</td>
+                    <td>45</td>
+                    <td>
+                        <input type="submit" value="Editar ✍🏻" class="botão">
+                        <input type="reset" value="Apagar ❌" class="botão_apagar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Os três porquinhos</td>
+                    <td>Não</td>
+                    <td>06/08/1984</td>
+                    <td>Ilustrado</td>
+                    <td>Sim</td>
+                    <td>11</td>
+                    <td>
+                        <input type="submit" value="Editar ✍🏻" class="botão">
+                        <input type="reset" value="Apagar ❌" class="botão_apagar">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Todos os direitos reservados - Livraria Carlos e Chrystian &copy;</p>
+    </footer>
+</body>
+
+</html>

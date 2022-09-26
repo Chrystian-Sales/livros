@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', 'Verdana';
+ 
+}
+
+label {
+  display: block;
+}
+
+header{
+  background-color: #d42127;
+  height:200px;
+}
+
+footer{
+  background-color: #d42127;
+}
+
+table{
+  text-align: center;
+}
+
+th{
+  background-color: rgba(170, 224, 244, 0.905)
+}
+
+.container {
+    display: flex;
+}
+
+.coluna {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+}  
+
+.coluna:first-child {
+    margin-right: 20px;
+} 
+
+.titulo{
+    color: #0230ff;
+    font-size: xx-large;
+    padding: 8px;
+
+}
+
+/* Adicionamos um fundo preto na navbar */
+.topnav {
+    background-color:  rgba(170, 224, 244, 0.905);
+    overflow: hidden; /* O que ocorre quando o texto não cabe no conteúdo*/
+}
+
+/* Estilizando os links dentro da navbar     */
+.topnav a {
+  float: left;
+  color: #02020280;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Roboto', 'Verdana';
+}
+
+/* Alterando as cores na propriedade hover */
+.topnav a:hover {
+  background-color: rgba(255, 255, 255, 0.905);
+  color: black;
+}
+
+/* Adicionando cor diferente para o item ativo */
+.topnav a.ativo {
+  background-color: #2b43f5;
+  color: #FFFFFF;
+}
+
+.topnav a.logo {
+    color: #FFFFFF;
+  }
+
+/* Definindo alinhamento a direita para os elementos */
+.topnav-right {
+  float: right;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(170, 224, 244, 0.905);
+    color: rgb(13, 13, 13);
+    text-align: center;
+  }
+  .botão{
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    color: black; /*botão color*/
+    background-color: yellow; /*borda*/
+    border: none;
+    cursor: pointer;/*cursor */
+    margin-top: 16px;
+
+}
+
+.botão:hover{/*quando pressionado - hover=pressionado*/
+    opacity: 0.3;
+    color: yellow;
+  background-color: green;
+  font-family: 'Roboto', 'Verdana';}
+
+  .botão_apagar{
+
+      padding-top: 8px;
+      padding-bottom: 8px; 
+      color: white; /*botão color*/
+      background-color: black; /*borda*/
+      border: none;
+      cursor: pointer;/*cursor */
+      margin-top: 16px;
+  
+  }
+  
+  .botão_apagar:hover{/*quando pressionado - hover=pressionado*/
+      opacity: 0.3;
+      color: black;
+      background-color: red;
+    }
